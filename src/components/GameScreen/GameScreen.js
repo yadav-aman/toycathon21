@@ -3,6 +3,7 @@ import ProgressScore from "./ProgressScore";
 import SuccessModal from "./SuccessModal";
 import FailModal from "./FailModal";
 import OptionsModal from "./OptionsModal";
+import items from "../../utils/itemData";
 import Item from "./Item";
 import LivesScore from "./LivesScore";
 import { Container } from "../MasterCss";
@@ -17,16 +18,11 @@ import { ReactComponent as PauseIcon } from "../../assets/pause-icon.svg";
 import { ReactComponent as RecycleBin } from "../../assets/recycle-bin.svg";
 import { ReactComponent as BlackBin } from "../../assets/waste-bin-tidyman.svg";
 import { ReactComponent as CompostBin } from "../../assets/compostable-bin.svg";
-import WineBottle from "../../images/wine-bottle.svg";
 
 const GameScreen = (props) => {
-  const [currentItem, setCurrentItem] = React.useState({
-    name: "Glass Bottles",
-    src: WineBottle,
-    bin: "recycling",
-    binImg: "images/recycle-bin.svg",
-    fact: "Families use around 330 glass bottles and jars every year",
-  });
+  const [currentItem, setCurrentItem] = React.useState(
+    items[Math.floor(Math.random() * items.length)]
+  );
   const [itemVisibility, setItemVisibility] = React.useState(true);
   const [successModal, setSuccessModal] = React.useState(false);
   const [failModal, setFailModal] = React.useState(false);
@@ -108,19 +104,6 @@ const GameScreen = (props) => {
         <ProgressScore gameScreen count={props.count} />
       </SC.Header>
 
-      {/* <SC.Scallop />
-      <SC.Algae1 />
-      <SC.Algae2 />
-      <SC.Algae3 />
-      <SC.Crab />
-      <SC.Seahorse />
-      <SC.RedFish />
-      <SC.Bubbles />
-      <SC.Wave2 />
-      <SC.Wave3 />
-      <SC.Jellyfish />
-      <SC.Wave4 /> */}
-
       <SC.GameItem>
         <DragDropContainer targetKey="bins">
           {itemVisibility && (
@@ -165,11 +148,6 @@ const GameScreen = (props) => {
           <CompostBin title="compostbin" />
         </DropTarget>
       </SC.CompostBinBox>
-      {/* 
-      <SC.Octopus />
-      <SC.Wave5 /> */}
-
-      {/* <SC.ItemText>{currentItem.name}</SC.ItemText> */}
     </Container>
   );
 };

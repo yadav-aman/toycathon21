@@ -128,7 +128,7 @@ const LandingScreen = (props) => {
         type="button"
         renderAs="button"
         handleClick={startGame}
-        label="Play!"
+        label="Play Now!"
       ></Button>
 
       <ButtonContainer>
