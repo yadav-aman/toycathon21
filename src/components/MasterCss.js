@@ -1,9 +1,11 @@
 import styled, { css } from "styled-components";
 import { ReactComponent as Cross } from "../assets/x-button.svg";
-
+import Background from "../assets/bg.png";
 
 const Container = styled.div`
-  background-image: linear-gradient(#21b2d3, #7abefd);
+  background-image: url(${Background});
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,7 +27,6 @@ const PageHeader = styled.h1`
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   margin-block-end: 0px;
   display: inline;
-
 `;
 
 const MessageBox = styled.div`
@@ -36,23 +37,21 @@ const MessageBox = styled.div`
   color: white;
   padding: 35px;
   margin: 1em;
-  display:flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   align-self: center;
 
-  ${props =>
-
+  ${(props) =>
     props.primary &&
     css`
       width: auto;
     `}
 
-  ${props =>
-
+  ${(props) =>
     props.results &&
     css`
-    justify-content: center;
+      justify-content: center;
     `}
 `;
 
@@ -94,7 +93,7 @@ const MessageImage = styled.img`
   width: 200px;
   height: 200px;
 
-  ${props =>
+  ${(props) =>
     props.bin &&
     css`
       width: 100px;
@@ -103,7 +102,7 @@ const MessageImage = styled.img`
 `;
 
 const OrangeText = styled.p`
-  color: #FF8A00;
+  color: #ff8a00;
   display: inline;
 `;
 
@@ -123,5 +122,5 @@ export {
   ModalHeader,
   MessageImage,
   OrangeText,
-  CloseCross
+  CloseCross,
 };

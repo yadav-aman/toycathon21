@@ -45,7 +45,7 @@ const ItemText = styled.h2`
   font-weight: normal;
   font-size: 64px;
   line-height: 77px;
-  color: #ffffff;
+  color: rgba(19, 86, 70, 100);
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   z-index: 1000;
   margin: 0;
@@ -57,7 +57,7 @@ const ItemText = styled.h2`
 const BlackBinBox = styled.div`
   position: fixed;
   bottom: 50px;
-  left: 8%;
+  left: 20%;
 `;
 
 const RecycleBinBox = styled.div`
@@ -70,7 +70,7 @@ const RecycleBinBox = styled.div`
 const CompostBinBox = styled.div`
   position: fixed;
   bottom: 50px;
-  right: 8%;
+  right: 20%;
 `;
 
 const GameItem = styled.div`

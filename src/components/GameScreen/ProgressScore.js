@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 
-import { ReactComponent as StarFish } from "../../assets/starfish-smile.svg";
+import Trophy from "../../assets/trophy.png";
 
 const ScoreContainer = styled.div`
   display: flex;
@@ -9,7 +9,7 @@ const ScoreContainer = styled.div`
   // justify-content: flex-end;
   align-items: center;
   // width: 28vw;
-  // padding-right: 20px;
+  padding-right: 20px;
 
   ${(props) =>
     props.results &&
@@ -36,7 +36,7 @@ const ProgressScore = (props) => {
   return (
     <ScoreContainer results={props.results}>
       <Score>{props.count}</Score>
-      <StarFish />
+      <img src={Trophy} alt="trophy" />
     </ScoreContainer>
   );
 };
