@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const GameItem = styled.img`
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   // animation: shake 0.5s;
   // animation-iteration-count: infinite;
 

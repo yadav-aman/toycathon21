@@ -75,9 +75,9 @@ const CompostBinBox = styled.div`
 
 const GameItem = styled.div`
   position: fixed;
-  top: 20%;
+  top: 15%;
   left: 50%;
-  margin-left: -50px;
+  margin-left: -80px;
 `;
 
 /* const Wave5 = styled(Wave5Svg)`
