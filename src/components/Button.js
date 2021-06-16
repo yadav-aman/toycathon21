@@ -1,9 +1,9 @@
 import React from "react";
-import UIfx from "uifx";
-import clickMp3 from "../assets/sounds/finger-snap.mp3";
+// import UIfx from "uifx";
+// import clickMp3 from "../assets/sounds/finger-snap.mp3";
 import styled, { css } from "styled-components";
 
-const click = new UIfx(clickMp3);
+// const click = new UIfx(clickMp3);
 
 const GenericButton = styled.button`
   background: #ff8a00;
@@ -26,23 +26,23 @@ const GenericButton = styled.button`
   z-index: 5;
   margin-bottom: 25px;
 
-  ${props =>
+  ${(props) =>
     props.primary &&
     css`
-      background: #a10094;
-      box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25), inset -10px -10px 4px #c202b2,
-        inset 10px 10px 4px #8a0072;
+      background: #24ae5f;
+      box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25), inset -10px -10px 4px #17723f,
+        inset 10px 10px 4px #1f9451;
     `}
 `;
 
-const Button = props => {
+const Button = (props) => {
   return (
     <GenericButton
       primary={props.primary}
       className="btn"
       onClick={() => {
         props.handleClick();
-        click.play();
+        // click.play();
       }}
     >
       {props.label}

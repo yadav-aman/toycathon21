@@ -19,20 +19,20 @@ import { ReactComponent as BlackBin } from "../../assets/waste-bin-tidyman.svg";
 import { ReactComponent as CompostBin } from "../../assets/compostable-bin.svg";
 import WineBottle from "../../images/wine-bottle.svg";
 
-const GameScreen = props => {
+const GameScreen = (props) => {
   const [currentItem, setCurrentItem] = React.useState({
     name: "Glass Bottles",
     src: WineBottle,
     bin: "recycling",
     binImg: "images/recycle-bin.svg",
-    fact: "Families use around 330 glass bottles and jars every year"
+    fact: "Families use around 330 glass bottles and jars every year",
   });
   const [itemVisibility, setItemVisibility] = React.useState(true);
   const [successModal, setSuccessModal] = React.useState(false);
   const [failModal, setFailModal] = React.useState(false);
   const [optionsModal, setOptionsModal] = React.useState(false);
 
-  const dropReaction = currentBin => {
+  const dropReaction = (currentBin) => {
     setItemVisibility(!itemVisibility);
 
     if (currentItem.bin === currentBin) {
@@ -96,7 +96,8 @@ const GameScreen = props => {
       )}
 
       <SC.Header>
-        <PauseIcon onClick={showOptionsModal} cursor="pointer"/>
+        <PauseIcon onClick={showOptionsModal} cursor="pointer" />
+        <SC.ItemText>{currentItem.name}</SC.ItemText>
         <SC.LivesContainer>
           <LivesScore
             badCount={props.badCount}
@@ -107,7 +108,7 @@ const GameScreen = props => {
         <ProgressScore gameScreen count={props.count} />
       </SC.Header>
 
-      <SC.Scallop />
+      {/* <SC.Scallop />
       <SC.Algae1 />
       <SC.Algae2 />
       <SC.Algae3 />
@@ -118,7 +119,7 @@ const GameScreen = props => {
       <SC.Wave2 />
       <SC.Wave3 />
       <SC.Jellyfish />
-      <SC.Wave4 />
+      <SC.Wave4 /> */}
 
       <SC.GameItem>
         <DragDropContainer targetKey="bins">
@@ -164,11 +165,11 @@ const GameScreen = props => {
           <CompostBin title="compostbin" />
         </DropTarget>
       </SC.CompostBinBox>
-
+      {/* 
       <SC.Octopus />
-      <SC.Wave5 />
+      <SC.Wave5 /> */}
 
-      <SC.ItemText>{currentItem.name}</SC.ItemText>
+      {/* <SC.ItemText>{currentItem.name}</SC.ItemText> */}
     </Container>
   );
 };

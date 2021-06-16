@@ -8,10 +8,10 @@ import { spinscale } from "../Keyframes";
 
 import { ReactComponent as EarthSvg } from "../../assets/earth.svg";
 import { ReactComponent as StarsSvg } from "../../assets/stars.svg";
-import { ReactComponent as SpaceOctopus } from "../../assets/space-octopus.svg";
+// import { ReactComponent as SpaceOctopus } from "../../assets/space-octopus.svg";
 
-import UIfx from "uifx";
-import kahootMusic from "../../../src/assets/sounds/Kahoot Lobby Music (HD).mp3";
+// import UIfx from "uifx";
+// import kahootMusic from "../../../src/assets/sounds/Kahoot Lobby Music (HD).mp3";
 
 const Container = styled.div`
   background-image: linear-gradient(#060606, #08345c);
@@ -24,22 +24,23 @@ const Container = styled.div`
   z-index: -10;
 `;
 
-const Title = styled.h1`
+const SubTitle = styled.h1`
   background-color: #ff8a00;
   font-family: "Freckle Face", cursive;
   font-style: normal;
   font-weight: normal;
-  font-size: 72px;
+  font-size: 54px;
   text-align: center;
-  line-height: 130px;
+  line-height: 80px;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   color: transparent;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   margin-bottom: 0;
+  margin-top: 0em;
   position: relative;
-  top: 10%;
+  top: 0%;
   z-index: 5;
 `;
 
@@ -59,13 +60,13 @@ const TitleBig = styled.h1`
   margin-block-end: 0em;
   z-index: 5;
 `;
-
+/* 
 const Octopus = styled.div`
   position: absolute;
   top: 25px;
   right: 20px;
 `;
-
+ */
 const Earth = styled.div`
   position: absolute;
   bottom: 0px;
@@ -94,28 +95,28 @@ const Stars = styled.div`
   align-items: flex-start;
   justify-content: space-around;
   overflow: hidden;
-  animation: ${ spinscale } 4s linear infinite alternate;
+  animation: ${spinscale} 4s linear infinite alternate;
 `;
 
-const LandingScreen = props => {
+const LandingScreen = (props) => {
   const history = useHistory();
 
-  const music = new UIfx(kahootMusic);
-  music.play(0.5); 
+  // const music = new UIfx(kahootMusic);
+  // music.play(0.5);
 
   const startGame = () => {
-   history.push("/game")
+    history.push("/game");
   };
 
   return (
-    
     <Container>
-      <Title>reduce, reuse,</Title>
-      <TitleBig>recycle!</TitleBig>
-
-      <Octopus>
+      <TitleBig>KaNChAN</TitleBig>
+      <SubTitle>
+        Kachra Niyantran <br /> Chunauti aur Apshisht Niptaan
+      </SubTitle>
+      {/* <Octopus>
         <SpaceOctopus />
-      </Octopus>
+      </Octopus> */}
       <Stars>
         <StarsSvg />
       </Stars>
@@ -127,9 +128,9 @@ const LandingScreen = props => {
         type="button"
         renderAs="button"
         handleClick={startGame}
-        label="Let's Play!"
+        label="Play!"
       ></Button>
-     
+
       <ButtonContainer>
         {props.howToPlayModal && (
           <HowToPlayModal
@@ -142,7 +143,7 @@ const LandingScreen = props => {
         <Button
           type="button"
           handleClick={props.showHowToPlayModal}
-          label="How To Play"
+          label="Instructions"
         ></Button>
         <Button
           type="button"
@@ -151,8 +152,6 @@ const LandingScreen = props => {
         ></Button>
       </ButtonContainer>
     </Container>
-   
-    
   );
 };
 
