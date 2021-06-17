@@ -5,6 +5,7 @@ import { useHistory } from "react-router-dom";
 import HowToPlayModal from "./HowToPlayModal";
 import FunFactsModal from "./FunFacts";
 import { spinscale } from "../Keyframes";
+import { BlackText } from "../MasterCss";
 
 // import { ReactComponent as EarthSvg } from "../../assets/earth.svg";
 // import { ReactComponent as StarsSvg } from "../../assets/stars.svg";
@@ -17,11 +18,11 @@ import CloudSrc from "../../assets/clouds.png";
 // import kahootMusic from "../../../src/assets/sounds/Kahoot Lobby Music (HD).mp3";
 
 const Container = styled.div`
-  background-image: linear-gradient(#63a3c5, #ffffff);
+  background-image: linear-gradient(#03adfc, #8ff8ff);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 100vh;
   width: 100vw;
   z-index: -10;
@@ -32,7 +33,7 @@ const SubTitle = styled.h1`
   font-family: "Freckle Face", cursive;
   font-style: normal;
   font-weight: normal;
-  font-size: 54px;
+  font-size: 45px;
   text-align: center;
   line-height: 80px;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -63,13 +64,7 @@ const TitleBig = styled.h1`
   margin-block-end: 0em;
   z-index: 5;
 `;
-/* 
-const Octopus = styled.div`
-  position: absolute;
-  top: 25px;
-  right: 20px;
-`;
- */
+
 const Earth = styled.div`
   position: absolute;
   bottom: 0px;
@@ -114,10 +109,17 @@ const LandingScreen = (props) => {
 
   return (
     <Container>
-      <TitleBig>KaNChAN</TitleBig>
-      <SubTitle>
-        Kachra Niyantran <br /> Chunauti aur Apshisht Niptaan
-      </SubTitle>
+      <div>
+        <TitleBig>KaNChAN</TitleBig>
+        <SubTitle>
+          Ka<BlackText>chra</BlackText> N<BlackText>iyantran</BlackText> Ch
+          <BlackText>unauti aur </BlackText>A<BlackText>pshisht </BlackText>N
+          <BlackText>iptaan</BlackText>
+        </SubTitle>
+        <SubTitle>
+          <BlackText>एक बार बबार्बादी, दो बार भुगतान!</BlackText>
+        </SubTitle>
+      </div>
       {/* <Octopus>
         <SpaceOctopus />
       </Octopus> */}
@@ -129,13 +131,6 @@ const LandingScreen = (props) => {
         {/* <EarthSvg /> */}
         <img src={EnvironmentSrc} alt="Environment" />
       </Earth>
-      <Button
-        primary
-        type="button"
-        renderAs="button"
-        handleClick={startGame}
-        label="Play Now!"
-      ></Button>
 
       <ButtonContainer>
         {props.howToPlayModal && (
@@ -146,10 +141,18 @@ const LandingScreen = (props) => {
         {props.funFactsModal && (
           <FunFactsModal handleClose={props.hideFunFactsModal}></FunFactsModal>
         )}
+        <div></div>
         <Button
           type="button"
           handleClick={props.showHowToPlayModal}
           label="Instructions"
+        ></Button>
+        <Button
+          primary
+          type="button"
+          renderAs="button"
+          handleClick={startGame}
+          label="Play Now!"
         ></Button>
         <Button
           type="button"

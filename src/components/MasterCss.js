@@ -106,6 +106,10 @@ const OrangeText = styled.p`
   display: inline;
 `;
 
+const BlackText = styled.p`
+  color: #000000;
+  display: inline;
+`;
 const CloseCross = styled(Cross)`
   left: 1%;
   top: 2.04%;
@@ -122,5 +126,6 @@ export {
   ModalHeader,
   MessageImage,
   OrangeText,
+  BlackText,
   CloseCross,
 };

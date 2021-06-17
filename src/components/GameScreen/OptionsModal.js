@@ -5,7 +5,8 @@ import { useHistory } from "react-router-dom";
 import { ReactComponent as PlayIcon } from "../../assets/play-icon.svg";
 
 const OptionsBox = styled.div`
-  background-color: #08345c;
+  background-color: #38b598;
+  opacity: 0.95;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -13,13 +14,16 @@ const OptionsBox = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 25px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-bottom: 15px;
   z-index: 2000;
   margin: 0;
-  border-radius: 0px 0px 25px 0px;
+  // border-style: solid;
+  // border-color: #38b598;
+  border: 5px solid #135646;
+  border-radius: 0px 25px 25px 25px;
 `;
 
 const OptionsList = styled.ul`
@@ -35,13 +39,13 @@ const OptionsListItem = styled.li`
   font-size: 36px;
   line-height: 50px;
   align-items: center;
-  color: #ffffff;
+  color: #135646;
   text-decoration: underline;
   cursor: pointer;
   line-height: 2;
 `;
 
-const OptionsModal = props => {
+const OptionsModal = (props) => {
   const hideOptionsModal = () => {
     props.setOptionsModal(!props.optionsModal);
   };
@@ -56,11 +60,17 @@ const OptionsModal = props => {
 
   return (
     <OptionsBox>
-      <PlayIcon onClick={hideOptionsModal} cursor="pointer"/>
+      <PlayIcon onClick={hideOptionsModal} cursor="pointer" />
       <OptionsList>
-        <OptionsListItem onClick={props.showHowToPlayModal} cursor="pointer">How to play</OptionsListItem>
-        <OptionsListItem onClick={props.showFunFactsModal}  cursor="pointer">Recycling Information</OptionsListItem>
-        <OptionsListItem onClick={quitGame}  cursor="pointer">Quit</OptionsListItem>
+        <OptionsListItem onClick={props.showHowToPlayModal} cursor="pointer">
+          How to play
+        </OptionsListItem>
+        <OptionsListItem onClick={props.showFunFactsModal} cursor="pointer">
+          Recycling Information
+        </OptionsListItem>
+        <OptionsListItem onClick={quitGame} cursor="pointer">
+          Quit
+        </OptionsListItem>
       </OptionsList>
     </OptionsBox>
   );
