@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { ReactComponent as RecycleBin } from "../../assets/recycle-bin.svg";
-import { ReactComponent as BlackBin } from "../../assets/waste-bin-tidyman.svg";
-import { ReactComponent as CompostBin } from "../../assets/compostable-bin.svg";
 import { ReactComponent as Heart } from "../../assets/heart-lives.svg";
-import { ReactComponent as StarFish } from "../../assets/starfish-smile.svg";
-
+import Trophy from "../../assets/trophy.png";
+import RecycleBin from "../../assets/blue-bin.png";
+import BlackBin from "../../assets/grey-bin.png";
+import CompostBin from "../../assets/green-bin.png";
 import Button from "../Button";
 import {
   PageHeader,
@@ -48,7 +47,7 @@ const HowToPlayModal = ({ handleClose }) => {
       <CenterChildren>
         <MessageBox>
           <BadgeBox>
-            <RecycleBin width="20%" height="70%" />
+            <img src={RecycleBin} alt="Recycle Bin" />
             <BoxMessage>
               Drag and drop items that <OrangeText>CAN BE RECYCLED</OrangeText>{" "}
               into this bin
@@ -57,7 +56,7 @@ const HowToPlayModal = ({ handleClose }) => {
         </MessageBox>
         <MessageBox>
           <BadgeBox>
-            <BlackBin width="20%" height="70%" />
+            <img src={BlackBin} alt="Black Bin" />
             <BoxMessage>
               Drag and drop items that{" "}
               <OrangeText>CANNOT BE RECYCLED</OrangeText> into this bin
@@ -66,7 +65,7 @@ const HowToPlayModal = ({ handleClose }) => {
         </MessageBox>
         <MessageBox>
           <BadgeBox>
-            <CompostBin width="20%" height="70%" />
+            <img src={CompostBin} alt="Compost Bin" />
             <BoxMessage>
               Drag and drop items that are <OrangeText>FOOD WASTE</OrangeText>{" "}
               into this bin
@@ -84,10 +83,10 @@ const HowToPlayModal = ({ handleClose }) => {
         </MessageBox>
         <MessageBox>
           <BadgeBox>
-            <StarFish width="20%" />
+            <img src={Trophy} alt="trophy" />
             <BoxMessage>
               If you put an item in the right bin you get a{" "}
-              <OrangeText>STARFISH POINT</OrangeText>!
+              <OrangeText>TROPHY</OrangeText>!
             </BoxMessage>
           </BadgeBox>
         </MessageBox>
