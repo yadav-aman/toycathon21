@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import Error from "./components/Error/Error";
+// import Error from "./components/Error/Error";
 import GameScreen from "./components/GameScreen/GameScreen";
 import ResultScreen from "./components/ResultScreen/ResultScreen";
 import LandingScreen from "./components/LandingScreen/LandingScreen";
@@ -31,11 +31,10 @@ function App() {
 
   return (
     <main className="App">
-    
       <Switch>
         {/* setting game screen as home for code review */}
         <Route
-          path="/"
+          path="/toycathon21"
           render={() => (
             <LandingScreen
               funFactsModal={funFactsModal}
@@ -84,9 +83,8 @@ function App() {
             />
           )}
         />
-        <Route component={Error} />
+        {/* <Route component={Error} /> */}
       </Switch>
-      
     </main>
   );
 }

@@ -53,7 +53,7 @@ const OptionsModal = (props) => {
   const quitGame = () => {
     props.setCount(0);
     props.setBadCount(0);
-    history.push("/");
+    history.push("/toycathon21");
   };
 
   return (
