@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/toycathon21/static/css/main.4a4137e4.chunk.css",
-    "main.js": "/toycathon21/static/js/main.45d8b1f8.chunk.js",
-    "main.js.map": "/toycathon21/static/js/main.45d8b1f8.chunk.js.map",
+    "main.js": "/toycathon21/static/js/main.71798272.chunk.js",
+    "main.js.map": "/toycathon21/static/js/main.71798272.chunk.js.map",
     "runtime-main.js": "/toycathon21/static/js/runtime-main.2de50706.js",
     "runtime-main.js.map": "/toycathon21/static/js/runtime-main.2de50706.js.map",
     "static/js/2.62c82f4a.chunk.js": "/toycathon21/static/js/2.62c82f4a.chunk.js",
@@ -32,8 +32,6 @@
     "static/media/plastic-bottle.853cbaae.svg": "/toycathon21/static/media/plastic-bottle.853cbaae.svg",
     "static/media/play-icon.1bb95170.svg": "/toycathon21/static/media/play-icon.1bb95170.svg",
     "static/media/shirt.e1b29deb.svg": "/toycathon21/static/media/shirt.e1b29deb.svg",
-    "static/media/space-octopus.104bb8ae.svg": "/toycathon21/static/media/space-octopus.104bb8ae.svg",
-    "static/media/stars.6651df58.svg": "/toycathon21/static/media/stars.6651df58.svg",
     "static/media/sweet-wrapper.d0b25e53.svg": "/toycathon21/static/media/sweet-wrapper.d0b25e53.svg",
     "static/media/tap.3e155915.svg": "/toycathon21/static/media/tap.3e155915.svg",
     "static/media/tea-bag.152c4412.svg": "/toycathon21/static/media/tea-bag.152c4412.svg",
@@ -48,6 +46,6 @@
     "static/js/runtime-main.2de50706.js",
     "static/js/2.62c82f4a.chunk.js",
     "static/css/main.4a4137e4.chunk.css",
-    "static/js/main.45d8b1f8.chunk.js"
+    "static/js/main.71798272.chunk.js"
   ]
 }
