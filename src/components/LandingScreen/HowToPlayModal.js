@@ -16,7 +16,7 @@ import {
 } from "../MasterCss";
 
 const HowToPlayBox = styled.div`
-  background-image: linear-gradient(#21b2d3, #7abefd);
+  background-image: linear-gradient(#023e8a, #00b4d8);
   padding: 2em;
   position: fixed;
   width: 90vw;

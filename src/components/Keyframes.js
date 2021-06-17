@@ -3,22 +3,22 @@ import { keyframes } from "styled-components";
 const spinscale = keyframes`
     0% {
       transform: 
-      rotate(0deg) 
+      rotate(-2deg) 
       scale(0.9)
     }
     35% {
         transform: 
-        rotate(3deg) 
+        rotate(2deg) 
         scale(0.84) 
     }
     70% {
         transform: 
-        rotate(7deg) 
+        rotate(4deg) 
         scale(0.9)
     }
     100% {
         transform: 
-        rotate(10deg) 
+        rotate(6deg) 
         scale(0.84) 
     }
 `;

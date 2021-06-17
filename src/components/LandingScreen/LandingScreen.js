@@ -141,7 +141,7 @@ const LandingScreen = (props) => {
         {props.funFactsModal && (
           <FunFactsModal handleClose={props.hideFunFactsModal}></FunFactsModal>
         )}
-        <div></div>
+
         <Button
           type="button"
           handleClick={props.showHowToPlayModal}

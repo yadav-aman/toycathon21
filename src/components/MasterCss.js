@@ -12,10 +12,11 @@ const Container = styled.div`
   justify-content: space-between;
   height: 100vh;
   width: 100vw;
+  font-family: Roboto;
 `;
 
 const PageHeader = styled.h1`
-  font-family: Freckle Face;
+  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 64px;
@@ -33,7 +34,7 @@ const MessageBox = styled.div`
   width: 50vw;
   min-height: 20vh;
   border-radius: 25px;
-  background-color: #08345c;
+  background-color: #a2d2ff;
   color: white;
   padding: 35px;
   margin: 1em;
@@ -63,20 +64,19 @@ const BadgeBox = styled.div`
 `;
 
 const BoxMessage = styled.p`
-  font-family: Signika;
-  font-style: normal;
+  font-family: Roboto;
   font-weight: 600;
   font-size: 36px;
   line-height: 50px;
   align-items: center;
-  color: #ffffff;
+  color: #000000;
   padding-left: 0.5em;
   margin: 0;
 `;
 
 const ModalHeader = styled.h2`
   text-align: center;
-  font-family: Bungee;
+  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 50px;
@@ -102,7 +102,7 @@ const MessageImage = styled.img`
 `;
 
 const OrangeText = styled.p`
-  color: #ff8a00;
+  color: #e45858;
   display: inline;
 `;
 

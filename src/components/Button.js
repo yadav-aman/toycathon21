@@ -12,7 +12,7 @@ const GenericButton = styled.button`
   border-radius: 25px;
   width: 375px;
   min-height: 100px;
-  font-family: Bungee;
+  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
