@@ -6,15 +6,18 @@ import HowToPlayModal from "./HowToPlayModal";
 import FunFactsModal from "./FunFacts";
 import { spinscale } from "../Keyframes";
 
-import { ReactComponent as EarthSvg } from "../../assets/earth.svg";
-import { ReactComponent as StarsSvg } from "../../assets/stars.svg";
+// import { ReactComponent as EarthSvg } from "../../assets/earth.svg";
+// import { ReactComponent as StarsSvg } from "../../assets/stars.svg";
 // import { ReactComponent as SpaceOctopus } from "../../assets/space-octopus.svg";
+
+import EnvironmentSrc from "../../assets/environment.png";
+import CloudSrc from "../../assets/clouds.png";
 
 // import UIfx from "uifx";
 // import kahootMusic from "../../../src/assets/sounds/Kahoot Lobby Music (HD).mp3";
 
 const Container = styled.div`
-  background-image: linear-gradient(#060606, #08345c);
+  background-image: linear-gradient(#63a3c5, #ffffff);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,7 +73,7 @@ const Octopus = styled.div`
 const Earth = styled.div`
   position: absolute;
   bottom: 0px;
-  left: -150px;
+  // left: -150px;
   overflow: hidden;
 `;
 
@@ -83,12 +86,13 @@ const ButtonContainer = styled.div`
   margin-bottom: 0.5em;
 `;
 
-const Stars = styled.div`
+const Clouds = styled.div`
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  bottom: 20%;
+  // top: 0;
+  // left: 0;
+  // width: 100vw;
+  // height: 100vh;
   pointer-events: none;
   display: flex;
   flex-direction: column;
@@ -117,11 +121,13 @@ const LandingScreen = (props) => {
       {/* <Octopus>
         <SpaceOctopus />
       </Octopus> */}
-      <Stars>
-        <StarsSvg />
-      </Stars>
+      <Clouds>
+        {/* <StarsSvg /> */}
+        <img src={CloudSrc} alt="Clouds" />
+      </Clouds>
       <Earth>
-        <EarthSvg />
+        {/* <EarthSvg /> */}
+        <img src={EnvironmentSrc} alt="Environment" />
       </Earth>
       <Button
         primary

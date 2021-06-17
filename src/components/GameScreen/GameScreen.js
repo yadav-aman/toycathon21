@@ -15,9 +15,6 @@ import * as SC from "./GameScreen.style";
 import { DragDropContainer, DropTarget } from "react-drag-drop-container";
 
 import { ReactComponent as PauseIcon } from "../../assets/pause-icon.svg";
-// import { ReactComponent as RecycleBin } from "../../assets/recycle-bin.svg";
-// import { ReactComponent as BlackBin } from "../../assets/waste-bin-tidyman.svg";
-// import { ReactComponent as CompostBin } from "../../assets/compostable-bin.svg";
 import RecycleBin from "../../assets/blue-bin.png";
 import BlackBin from "../../assets/grey-bin.png";
 import CompostBin from "../../assets/green-bin.png";
@@ -126,7 +123,6 @@ const GameScreen = (props) => {
             dropReaction("general waste");
           }}
         >
-          {/* <BlackBin title="blackbin" /> */}
           <img src={BlackBin} alt="Black Bin" />
         </DropTarget>
       </SC.BlackBinBox>
@@ -138,7 +134,6 @@ const GameScreen = (props) => {
             dropReaction("recycling");
           }}
         >
-          {/* <RecycleBin title="recyclebin" /> */}
           <img src={RecycleBin} alt="Recycle Bin" />
         </DropTarget>
       </SC.RecycleBinBox>
@@ -150,7 +145,6 @@ const GameScreen = (props) => {
             dropReaction("food compost");
           }}
         >
-          {/* <CompostBin title="compostbin" /> */}
           <img src={CompostBin} alt="Compost Bin" />
         </DropTarget>
       </SC.CompostBinBox>

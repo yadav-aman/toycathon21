@@ -1,4 +1,4 @@
-import { keyframes } from 'styled-components';
+import { keyframes } from "styled-components";
 
 const spinscale = keyframes`
     0% {
@@ -21,12 +21,12 @@ const spinscale = keyframes`
         rotate(10deg) 
         scale(0.84) 
     }
-`
+`;
 const rotatey = keyframes`
     100% {
       transform: rotate(360deg);
     }
-  `
+  `;
 // const translaterotate = keyframes`
 //     0% {
 //       transform: translate(20px, 10vmin) rotate(0deg);
