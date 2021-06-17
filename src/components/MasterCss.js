@@ -16,7 +16,7 @@ const Container = styled.div`
 `;
 
 const PageHeader = styled.h1`
-  font-family: Roboto;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 64px;

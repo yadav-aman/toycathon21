@@ -20,7 +20,7 @@ const ScoreContainer = styled.div`
 `;
 
 const Score = styled.p`
-  font-family: Bungee;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 64px;

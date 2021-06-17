@@ -49,17 +49,8 @@ const HowToPlayModal = ({ handleClose }) => {
           <BadgeBox>
             <img src={RecycleBin} alt="Recycle Bin" />
             <BoxMessage>
-              Drag and drop items that <OrangeText>CAN BE RECYCLED</OrangeText>{" "}
+              Drag and drop items that<OrangeText> CAN BE RECYCLED</OrangeText>{" "}
               into this bin
-            </BoxMessage>
-          </BadgeBox>
-        </MessageBox>
-        <MessageBox>
-          <BadgeBox>
-            <img src={BlackBin} alt="Black Bin" />
-            <BoxMessage>
-              Drag and drop items that{" "}
-              <OrangeText>CANNOT BE RECYCLED</OrangeText> into this bin
             </BoxMessage>
           </BadgeBox>
         </MessageBox>
@@ -67,8 +58,17 @@ const HowToPlayModal = ({ handleClose }) => {
           <BadgeBox>
             <img src={CompostBin} alt="Compost Bin" />
             <BoxMessage>
-              Drag and drop items that are <OrangeText>FOOD WASTE</OrangeText>{" "}
-              into this bin
+              Drag and drop items that are
+              <OrangeText> ORGANIC WASTE</OrangeText> into this bin
+            </BoxMessage>
+          </BadgeBox>
+        </MessageBox>
+        <MessageBox>
+          <BadgeBox>
+            <img src={BlackBin} alt="Black Bin" />
+            <BoxMessage>
+              Drag and drop items that
+              <OrangeText> CANNOT BE RECYCLED</OrangeText> into this bin
             </BoxMessage>
           </BadgeBox>
         </MessageBox>

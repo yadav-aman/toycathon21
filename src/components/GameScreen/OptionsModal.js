@@ -33,16 +33,14 @@ const OptionsList = styled.ul`
 `;
 
 const OptionsListItem = styled.li`
-  font-family: Signika;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
-  line-height: 50px;
   align-items: center;
   color: #135646;
-  text-decoration: underline;
   cursor: pointer;
-  line-height: 2;
+  line-height: 1.5;
 `;
 
 const OptionsModal = (props) => {

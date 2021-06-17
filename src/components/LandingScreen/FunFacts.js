@@ -59,7 +59,7 @@ const FunFactsModal = ({ handleClose }) => {
   return (
     <FunFactsBox>
       <CloseCross onClick={handleClose} />
-      <PageHeader>About Recycling</PageHeader>
+      <PageHeader>The three R's</PageHeader>
       <MessageBox primary>
         <BoxMessage>
           <p>

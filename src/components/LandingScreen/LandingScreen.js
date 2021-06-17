@@ -7,15 +7,8 @@ import FunFactsModal from "./FunFacts";
 import { spinscale } from "../Keyframes";
 import { BlackText } from "../MasterCss";
 
-// import { ReactComponent as EarthSvg } from "../../assets/earth.svg";
-// import { ReactComponent as StarsSvg } from "../../assets/stars.svg";
-// import { ReactComponent as SpaceOctopus } from "../../assets/space-octopus.svg";
-
 import EnvironmentSrc from "../../assets/environment.png";
 import CloudSrc from "../../assets/clouds.png";
-
-// import UIfx from "uifx";
-// import kahootMusic from "../../../src/assets/sounds/Kahoot Lobby Music (HD).mp3";
 
 const Container = styled.div`
   background-image: linear-gradient(#03adfc, #8ff8ff);
@@ -30,12 +23,12 @@ const Container = styled.div`
 
 const SubTitle = styled.h1`
   background-color: #ff8a00;
-  font-family: "Freckle Face", cursive;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 45px;
   text-align: center;
-  line-height: 80px;
+  line-height: 60px;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   color: transparent;
   -webkit-background-clip: text;
@@ -49,13 +42,12 @@ const SubTitle = styled.h1`
 `;
 
 const TitleBig = styled.h1`
-  background-color: #ff8a00;
-  font-family: "Freckle Face", cursive;
+  background-color: #eb7f21;
+  font-family: "Poppins", sans-serif;
   text-align: center;
   font-size: 110px;
   font-weight: bold;
-  // -webkit-text-stroke: 1px black;
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 3px 3px 3px rgba(235, 154, 40, 0.4);
   color: transparent;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -117,7 +109,7 @@ const LandingScreen = (props) => {
           <BlackText>iptaan</BlackText>
         </SubTitle>
         <SubTitle>
-          <BlackText>एक बार बबार्बादी, दो बार भुगतान!</BlackText>
+          <BlackText>एक बार बर्बादी, दो बार भुगतान!</BlackText>
         </SubTitle>
       </div>
       {/* <Octopus>
@@ -157,7 +149,7 @@ const LandingScreen = (props) => {
         <Button
           type="button"
           handleClick={props.showFunFactsModal}
-          label="Fun Facts"
+          label="Tips"
         ></Button>
       </ButtonContainer>
     </Container>

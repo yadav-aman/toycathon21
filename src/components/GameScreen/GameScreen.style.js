@@ -25,12 +25,12 @@ const LivesContainer = styled.div`
 
 const ItemText = styled.h2`
   text-align: center;
-  font-family: Bungee;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 64px;
   line-height: 77px;
-  color: rgba(19, 86, 70, 100);
+  color: rgba(19, 90, 70, 100);
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   z-index: 1000;
   margin: 0;
