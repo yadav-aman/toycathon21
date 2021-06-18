@@ -59,20 +59,20 @@ const FunFactsModal = ({ handleClose }) => {
   return (
     <FunFactsBox>
       <CloseCross onClick={handleClose} />
-      <PageHeader>The three R's</PageHeader>
+      <PageHeader>The five R's</PageHeader>
       <MessageBox primary>
         <BoxMessage>
-          <p>
+          {/* <p>
             All the natural resources we use and rubbish we create is hurting
             the planet and the animals who share it with us.
-          </p>
+          </p> */}
 
           <p>
-            This may sound scary but there's something we can all do about it!
+           If you want to positively impact the environment 
           </p>
-
+ 
           <p>
-            We can <OrangeText>REDUCE, REUSE</OrangeText> and{" "}
+            We recommend to use the philosophy of <OrangeText>REDUCE, REUSE, REPAIR, ROT</OrangeText> and{" "}
             <OrangeText>RECYCLE</OrangeText>, to prevent our rubbish from going
             into smelly landfills or ending up in the ocean.
           </p>
@@ -86,21 +86,14 @@ const FunFactsModal = ({ handleClose }) => {
           </p>
 
           <FactList>
-            <li>When you’re shopping, only buy what you need.</li>
-            <li>Can you shop at a zero-waste grocery store?</li>
-            <li>
-              Try to walk more instead of using the car. Your parents will use
-              less petrol!
-            </li>
-            <li>
-              {" "}
-              Turn off the tap when brushing your teeth and you'll waste less
-              water
-            </li>
-            <li>
-              Switch off the TV, games console, and electrical items to reduce
-              your energy use
-            </li>
+            <p>Don’t create waste if you don’t have to.
+           <br/>A few good examples: </p>
+         
+            <li>Save up to thousands of bottles and cans per year and use refillable bottles instead of buying single use beverage containers</li>
+            <li>Copy documents on both sides of the paper instead of single-sided copying</li>
+            <li>Use cloth bags at stores and just say NO to paper AND plastic</li>
+            
+            
           </FactList>
 
           <Flexy>
@@ -118,18 +111,17 @@ const FunFactsModal = ({ handleClose }) => {
           </p>
 
           <FactList>
+          <p>Reuse any material or product you can before you give it away or recycle it
+          <br/>A few good examples:</p>
+          
             <li>
-              Take a reusable bag for life or old carrier bag with you when
-              heading to the shops
+            Share gently used clothing and toys your children have outgrown with friends and family
             </li>
             <li>
-              When something is broken, see if you can mend it instead of
-              throwing it away
-            </li>
-            <li>
-              If it can’t be mended, see if you can find a new use for it!
+            Clothing, toys, and gardening implements can be donated to thrift stores such as Savers (HOPE Services), Goodwill Industries, and Salvation Army
             </li>
             <li>Give unwanted items to charity</li>
+            <li>See the Moving Resources page for more details and places to donate</li>
             <li>
               Reuse scrap paper – you can always use both sides of a sheet of
               paper to draw on!
@@ -143,6 +135,64 @@ const FunFactsModal = ({ handleClose }) => {
           </Flexy>
         </BoxMessage>
       </MessageBox>
+      
+      <MessageBox primary>
+        <BoxMessage>
+          <p>
+            <OrangeText>REPAIR</OrangeText>
+          </p>
+
+          <FactList>
+          <p>Fix stuff before tossing it and buying new
+          <br/>A few good examples:</p>
+          
+            <li>
+            Buy a knife sharpener and revive those tired knives
+            </li>
+            <li>
+            Buy furniture and products that last and fix or re-finish them to give them a new look
+            </li>
+            <li>Sharpen gardening implements…a sharpened shovel or hoe makes life so much easier</li>
+            
+          </FactList>
+
+          <Flexy>
+          
+            <Tap width="150px" height="150px" />
+            
+            <TV width="150px" height="150px" />
+          </Flexy>
+        </BoxMessage>
+      </MessageBox>
+
+      <MessageBox primary>
+        <BoxMessage>
+          <p>
+            <OrangeText>ROT</OrangeText>
+          </p>
+
+          <FactList>
+          <p>Kitchen scraps and yard trimmings are too valuable to bury in landfills
+          </p>
+          
+            <li>
+            Compost makes great soil.
+            </li>
+            <li>
+            In each residential trash cart destined for the landfill, approximately 40% of it is food, and it is bulky and heavy
+            </li>
+            <li>Households that compost can save money on monthly disposal fees by reducing the size of their trash container to a smaller size! </li>
+            <li>
+            Children love to compost and can learn so much about science if encouraged to participate in this fun process
+            </li>
+          </FactList>
+
+          <Flexy>
+          <Apple width="150px" height="150px" />            
+            <Paper width="150px" height="150px" />
+          </Flexy>
+        </BoxMessage>
+      </MessageBox>
 
       <MessageBox primary>
         <BoxMessage>
@@ -151,12 +201,12 @@ const FunFactsModal = ({ handleClose }) => {
           </p>
 
           <FactList>
+          <p>Last but not least, if you absolutely cannot do something else with your stuff, find a way to recycle it</p>
             <li>
-              Always see if you can buy things made from recycled materials
+            Buy in bulk to eliminate excess packaging that needs to be recycled
             </li>
             <li>
-              Sort all your rubbish so that the glass, tin cans, plastic and
-              paper can be recycled
+            Recycle your bottles and cans at a local buyback center and get your deposit of 5 and 10 cents returned on your single use bottles and cans
             </li>
             <li>
               Think about what other things can be recycled at your local
