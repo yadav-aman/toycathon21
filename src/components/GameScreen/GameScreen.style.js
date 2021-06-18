@@ -36,13 +36,16 @@ const ItemText = styled.h2`
   margin: 0;
   // position: fixed;
   // bottom: 2%;
-  // width: 100vw;
+  // width: 100vw; 
 `;
 
 const BlackBinBox = styled.div`
   position: fixed;
   bottom: 50px;
   left: 20%;
+  &:hover {
+    transform: scale(1.2);
+  }
 `;
 
 const RecycleBinBox = styled.div`
@@ -50,12 +53,18 @@ const RecycleBinBox = styled.div`
   bottom: 50px;
   left: 50%;
   margin-left: -107px;
+  &:hover {
+    transform: scale(1.2);
+  }
 `;
 
 const CompostBinBox = styled.div`
   position: fixed;
   bottom: 50px;
   right: 20%;
+  &:hover {
+    transform: scale(1.2);
+  }
 `;
 
 const GameItem = styled.div`

@@ -9,8 +9,9 @@ import {
   CloseCross,
 } from "../MasterCss";
 
-import { ReactComponent as Paper } from "../../assets/paper.svg";
+import { ReactComponent as Paper } from "../../assets/paper.svg"; 
 import { ReactComponent as Apple } from "../../assets/apple-core.svg";
+import  ApplePNG  from "../../assets/apple.png"; 
 import { ReactComponent as Shirt } from "../../assets/shirt.svg";
 import { ReactComponent as Walk } from "../../assets/walk.svg";
 import { ReactComponent as DrinksCan } from "../../assets/drinks-can.svg";
@@ -185,11 +186,12 @@ const FunFactsModal = ({ handleClose }) => {
             <li>
             Children love to compost and can learn so much about science if encouraged to participate in this fun process
             </li>
-          </FactList>
+          </FactList> 
 
           <Flexy>
-          <Apple width="150px" height="150px" />            
+          <Apple width="150px" height="150px" />             
             <Paper width="150px" height="150px" />
+          <img src={ApplePNG} alt="apple" width="150px" height="150px" />      
           </Flexy>
         </BoxMessage>
       </MessageBox>
