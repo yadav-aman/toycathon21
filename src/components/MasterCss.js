@@ -31,8 +31,8 @@ const PageHeader = styled.h1`
 `;
 
 const MessageBox = styled.div`
-  width: 50vw;
-  min-height: 20vh;
+  width: 75vw;
+  min-height: 40vh;
   border-radius: 25px;
   background-color: #a2d2ff;
   color: white;

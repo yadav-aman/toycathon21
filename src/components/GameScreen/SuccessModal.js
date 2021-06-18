@@ -39,9 +39,9 @@ const SuccessModal = (props) => {
 
   return (
     <SuccessBox id="success" onClick={hideModal}>
-      <SC.ModalHeader>Well Done!</SC.ModalHeader>
+      <SC.ModalHeader>Great job!</SC.ModalHeader>
       <SC.ModalHeader>
-        {props.item.name} go in the {props.item.bin} bin.
+        {props.item.name} belongs to the {props.item.bin} bin.
       </SC.ModalHeader>
       <SC.BadgeBox>
         <SC.MessageBox>

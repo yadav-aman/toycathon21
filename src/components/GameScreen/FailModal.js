@@ -44,9 +44,9 @@ const FailModal = (props) => {
 
   return (
     <FailBox id="fail" onClick={hideModal}>
-      <SC.ModalHeader>Uh Oh!</SC.ModalHeader>
+      <SC.ModalHeader>Incorrect!</SC.ModalHeader>
       <SC.ModalHeader>
-        {props.item.name} go in the {props.item.bin} bin.
+        {props.item.name} belongs to the {props.item.bin} bin.
       </SC.ModalHeader>
       <SC.BadgeBox>
         <SC.MessageBox>
