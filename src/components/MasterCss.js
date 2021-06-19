@@ -40,6 +40,7 @@ const MessageBox = styled.div`
   margin: 1em;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   align-self: center;
 
@@ -81,7 +82,7 @@ const ModalHeader = styled.h2`
   font-weight: normal;
   font-size: 50px;
   line-height: 77px;
-  color: #ffffff;
+  color: black;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0;
   width: 80vw;
