@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/toycathon21/static/css/main.4a4137e4.chunk.css",
-    "main.js": "/toycathon21/static/js/main.9607a4b5.chunk.js",
-    "main.js.map": "/toycathon21/static/js/main.9607a4b5.chunk.js.map",
+    "main.js": "/toycathon21/static/js/main.6df58b00.chunk.js",
+    "main.js.map": "/toycathon21/static/js/main.6df58b00.chunk.js.map",
     "runtime-main.js": "/toycathon21/static/js/runtime-main.2de50706.js",
     "runtime-main.js.map": "/toycathon21/static/js/runtime-main.2de50706.js.map",
     "static/js/2.62c82f4a.chunk.js": "/toycathon21/static/js/2.62c82f4a.chunk.js",
@@ -11,6 +11,7 @@
     "static/css/main.4a4137e4.chunk.css.map": "/toycathon21/static/css/main.4a4137e4.chunk.css.map",
     "static/js/2.62c82f4a.chunk.js.LICENSE.txt": "/toycathon21/static/js/2.62c82f4a.chunk.js.LICENSE.txt",
     "static/media/apple-core.ff299004.svg": "/toycathon21/static/media/apple-core.ff299004.svg",
+    "static/media/apple.4320b218.png": "/toycathon21/static/media/apple.4320b218.png",
     "static/media/bg.839bc606.png": "/toycathon21/static/media/bg.839bc606.png",
     "static/media/blue-bin.acf83868.png": "/toycathon21/static/media/blue-bin.acf83868.png",
     "static/media/cardboard-box.da5eefc3.svg": "/toycathon21/static/media/cardboard-box.da5eefc3.svg",
@@ -46,6 +47,6 @@
     "static/js/runtime-main.2de50706.js",
     "static/js/2.62c82f4a.chunk.js",
     "static/css/main.4a4137e4.chunk.css",
-    "static/js/main.9607a4b5.chunk.js"
+    "static/js/main.6df58b00.chunk.js"
   ]
 }
