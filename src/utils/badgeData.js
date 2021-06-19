@@ -2,27 +2,32 @@ import TurtleBadge from "../images/turtle-badge.svg";
 import FishBadge from "../images/fish-badge.svg";
 import PenguinBadge from "../images/penguin-badge.svg";
 import DolphinBadge from "../images/dolphin-badge.svg";
+import BronzeMedal from "../images/bronze-medal.png";
+import SilverMedal from "../images/silver-medal.png";
+import GoldMedal from "../images/gold-medal.png";
+import DoubleStarMedal from "../images/double-star-medal.png";
+import DiamondMedal from "../images/diamond-medal.png";
 
 const badges = [
   {
-    src: TurtleBadge,
-    message: " points! You won a turtle badge!"
+    src: BronzeMedal,
+    message: " points! You won a bronze medal!"
   },
   {
-    src: PenguinBadge,
-    message: " points! You won a penguin badge!"
+    src: SilverMedal,
+    message: " points! You won a silver medal!"
   },
   {
-    src: FishBadge,
-    message: " points! You won a fish badge!"
+    src: GoldMedal,
+    message: " points! You won a gold medal!"
   },
   {
-    src: DolphinBadge,
-    message: " points! You won a dolphin badge!"
+    src: DoubleStarMedal,
+    message: " points! You won a double star medal!"
   },
   {
-    src: TurtleBadge,
-    message: " point! You won a turtle badge!"
+    src: DiamondMedal,
+    message: " point! You won a diamond medal!"
   }
 ];
 

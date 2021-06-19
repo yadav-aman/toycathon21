@@ -32,14 +32,17 @@ const ResultScreen = props => {
 
   React.useEffect(() => {
     if (props.count === 1) {
-      setBadgeGiven(4)
+      setBadgeGiven(0)
     } else if (props.count >= 5 && props.count < 11) {
       setBadgeGiven(1);
     } else if (props.count >= 10 && props.count < 16) {
       setBadgeGiven(2);
     } else if (props.count >= 15) {
       setBadgeGiven(3);
+    }else if (props.count >= 20) {
+      setBadgeGiven(4);
     }
+    
   }, [props.count, badgeGiven]);
 
   const history = useHistory();
@@ -58,7 +61,7 @@ const ResultScreen = props => {
         {" "}
         <MessageImage
           src={badges[badgeGiven].src}
-          alt="An animal badge to say well done!"
+          alt="A badge to say well done!"
         />
         <MessageBox results>
           <BoxMessage>{props.count}{badges[badgeGiven].message}</BoxMessage>
