@@ -52,10 +52,10 @@ const items = [
     fact: "Flatten cardboard boxes before they go in the bin!",
   },
   {
-    name: "Drinks Cans",
+    name: "Spray Cans",
     src: DrinksCan,
     bin: "recycling",
-    fact: "A recycled drinks can could be back in the shops as a new drink within 60 days!",
+    fact: "The steel used to make aerosol cans contains about 25 percent recycled metal",
   },
   {
     name: "Milk Cartons",
