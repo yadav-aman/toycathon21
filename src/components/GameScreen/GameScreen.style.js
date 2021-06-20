@@ -36,7 +36,25 @@ const ItemText = styled.h2`
   margin: 0;
   // position: fixed;
   // bottom: 2%;
-  // width: 100vw; 
+  // width: 100vw;
+  animation: blink 1.5s linear infinite;
+  @keyframes blink {
+    0% {
+      opacity: 0.5;
+    }
+    25% {
+      opacity: 0.7;
+    }
+    50% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
 `;
 
 const BlackBinBox = styled.div`
