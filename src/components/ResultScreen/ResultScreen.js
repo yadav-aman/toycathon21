@@ -14,7 +14,7 @@ import {
   BadgeBox,
   BoxMessage,
   MessageImage,
-  PageHeader
+  PageHeader,
 } from "../MasterCss";
 
 const ButtonContainer = styled.div`
@@ -27,22 +27,21 @@ const ButtonContainer = styled.div`
   padding-bottom: 25px;
 `;
 
-const ResultScreen = props => {
+const ResultScreen = (props) => {
   const [badgeGiven, setBadgeGiven] = React.useState(0);
 
   React.useEffect(() => {
     if (props.count === 1) {
-      setBadgeGiven(0)
-    } else if (props.count >= 5 && props.count < 11) {
-      setBadgeGiven(1);
-    } else if (props.count >= 10 && props.count < 16) {
-      setBadgeGiven(2);
+      setBadgeGiven(0);
+    } else if (props.count >= 20) {
+      setBadgeGiven(4);
     } else if (props.count >= 15) {
       setBadgeGiven(3);
-    }else if (props.count >= 20) {
-      setBadgeGiven(4);
+    } else if (props.count >= 10) {
+      setBadgeGiven(2);
+    } else if (props.count >= 5) {
+      setBadgeGiven(1);
     }
-    
   }, [props.count, badgeGiven]);
 
   const history = useHistory();
@@ -64,7 +63,10 @@ const ResultScreen = props => {
           alt="A badge to say well done!"
         />
         <MessageBox results>
-          <BoxMessage>{props.count}{badges[badgeGiven].message}</BoxMessage>
+          <BoxMessage>
+            {props.count}
+            {badges[badgeGiven].message}
+          </BoxMessage>
         </MessageBox>
       </BadgeBox>
       <ButtonContainer>
