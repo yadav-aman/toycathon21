@@ -13,6 +13,7 @@ const Container = styled.div`
   height: 100vh;
   width: 100vw;
   font-family: Roboto;
+  overflow: hidden;
 `;
 
 const PageHeader = styled.h1`

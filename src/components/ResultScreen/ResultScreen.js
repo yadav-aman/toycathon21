@@ -76,10 +76,12 @@ const ResultScreen = (props) => {
         )}
         <Button label="learn more" handleClick={props.showFunFactsModal}>
           {props.label}
-        </Button> 
+        </Button>
 
         {props.certificateModal && (
-          <CertificateModal handleClose={props.hideFunFactsModal}></CertificateModal>
+          <CertificateModal
+            handleClose={props.hideCertificate}
+          ></CertificateModal>
         )}
         <Button label="Certificate" handleClick={props.showCertificate}>
           {props.label}
