@@ -7,6 +7,7 @@ import ProgressScore from "../GameScreen/ProgressScore";
 import Button from "../Button";
 
 import FunFactsModal from "../LandingScreen/FunFacts";
+import CertificateModal from "./Certificate";
 
 import {
   Container,
@@ -74,6 +75,13 @@ const ResultScreen = (props) => {
           <FunFactsModal handleClose={props.hideFunFactsModal}></FunFactsModal>
         )}
         <Button label="learn more" handleClick={props.showFunFactsModal}>
+          {props.label}
+        </Button> 
+
+        {props.certificateModal && (
+          <CertificateModal handleClose={props.hideFunFactsModal}></CertificateModal>
+        )}
+        <Button label="Certificate" handleClick={props.showCertificate}>
           {props.label}
         </Button>
 
