@@ -5,6 +5,7 @@ import { PageHeader, MessageBox, BoxMessage, CloseCross } from "../MasterCss";
 
 import sampleCertificate from "../../images/sampleCertificate.png";
 import certificateTemplate from "../../images/certificateTemplate.png";
+import { jsPDF } from "jspdf";
 
 const FunFactsBox = styled.div`
   background-image: linear-gradient(#21b2d3, #7abefd);
@@ -15,7 +16,6 @@ const FunFactsBox = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  overflow: scroll;
   display: block;
   z-index: 3000;
   border-radius: 25px;
@@ -52,8 +52,15 @@ const Flexy = styled.div`
   align-items: center;
 `;
 
-const genratePDF = (name) => {
-  alert(name);
+const generatePDF = (name) => {
+  if (name) {
+    var doc = new jsPDF({
+      orientation: 'landscape'
+    })
+  }
+  else {
+    alert("Plz enter name");
+  }
 };
 
 const CertificateModal = ({ handleClose }) => {
@@ -69,7 +76,7 @@ const CertificateModal = ({ handleClose }) => {
               <form
                 onSubmit={(e) => {
                   e.preventDefault();
-                  genratePDF(name);
+                  generatePDF(name);
                 }}
                 id="certificate-form"
               >
@@ -91,7 +98,7 @@ const CertificateModal = ({ handleClose }) => {
 
       <Button
         primary
-        handleClick={() => genratePDF(name)}
+        handleClick={() => generatePDF(name)}
         form="certificate-form"
         label="Download"
       ></Button>
