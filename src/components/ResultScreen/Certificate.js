@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Button from "../Button";
 import { PageHeader, MessageBox, BoxMessage, CloseCross } from "../MasterCss";
+import jsPDF from "jspdf";
 
 import sampleCertificate from "../../images/sampleCertificate.png";
 import certificateTemplate from "../../images/certificateTemplate.png";
-import { jsPDF } from "jspdf";
 
 const FunFactsBox = styled.div`
   background-image: linear-gradient(#21b2d3, #7abefd);
@@ -52,14 +52,29 @@ const Flexy = styled.div`
   align-items: center;
 `;
 
+function toTitleCase(str) {
+  return str
+    .toLowerCase()
+    .split(" ")
+    .map(function (word) {
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    })
+    .join(" ");
+}
+
 const generatePDF = (name) => {
   if (name) {
+    name = toTitleCase(name);
     var doc = new jsPDF({
-      orientation: 'landscape'
-    })
-  }
-  else {
-    alert("Plz enter name");
+      orientation: "landscape",
+    });
+    doc.addFont("helvetica", "normal");
+    doc.setFontSize(60);
+    doc.addImage(certificateTemplate, "JPEG", 0, 0, 298, 210);
+    doc.text(75, 105, name);
+    doc.save("kanchan-certificate.pdf");
+  } else {
+    alert("Please enter name");
   }
 };
 
