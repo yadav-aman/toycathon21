@@ -83,9 +83,11 @@ const ResultScreen = (props) => {
             handleClose={props.hideCertificate}
           ></CertificateModal>
         )}
-        <Button label="Certificate" handleClick={props.showCertificate}>
-          {props.label}
-        </Button>
+        {props.count > 20 && (
+          <Button label="Certificate" handleClick={props.showCertificate}>
+            {props.label}
+          </Button>
+        )}
 
         <Button primary label="Play again" handleClick={restartGame}>
           {props.label}
