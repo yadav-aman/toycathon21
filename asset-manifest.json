@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/toycathon21/static/css/main.4a4137e4.chunk.css",
-    "main.js": "/toycathon21/static/js/main.2e3e8171.chunk.js",
-    "main.js.map": "/toycathon21/static/js/main.2e3e8171.chunk.js.map",
+    "main.js": "/toycathon21/static/js/main.cc8434c3.chunk.js",
+    "main.js.map": "/toycathon21/static/js/main.cc8434c3.chunk.js.map",
     "runtime-main.js": "/toycathon21/static/js/runtime-main.194a580b.js",
     "runtime-main.js.map": "/toycathon21/static/js/runtime-main.194a580b.js.map",
     "static/js/2.7409d5d1.chunk.js": "/toycathon21/static/js/2.7409d5d1.chunk.js",
@@ -59,6 +59,6 @@
     "static/js/runtime-main.194a580b.js",
     "static/js/3.df1526fb.chunk.js",
     "static/css/main.4a4137e4.chunk.css",
-    "static/js/main.2e3e8171.chunk.js"
+    "static/js/main.cc8434c3.chunk.js"
   ]
 }
