@@ -92,6 +92,16 @@ const GameItem = styled.div`
   margin-left: -80px;
 `;
 
+const Video = styled.div`
+  position: fixed;
+  bottom: 15%;
+  right: 1%;
+  height: 250px;
+  width: 360px;
+  background: #000;
+  opacity: 0.1;
+`;
+
 export {
   Header,
   LivesContainer,
@@ -100,4 +110,5 @@ export {
   CompostBinBox,
   GameItem,
   ItemText,
+  Video,
 };

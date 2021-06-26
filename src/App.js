@@ -32,12 +32,11 @@ function App() {
     setCertificate(!certificate);
   };
 
-
   const [count, setCount] = React.useState(0);
   const [funFactsModal, setFunFactsModal] = React.useState(false);
   const [howToPlayModal, setHowToPlayModal] = React.useState(false);
   const [badCount, setBadCount] = React.useState(0);
-  const [certificate, setCertificate]= React.useState(false);
+  const [certificate, setCertificate] = React.useState(false);
 
   return (
     <main className="App">
@@ -88,7 +87,7 @@ function App() {
               setFunFactsModal={setFunFactsModal}
               showFunFactsModal={showFunFactsModal}
               hideFunFactsModal={hideFunFactsModal}
-              badCount={badCount} 
+              badCount={badCount}
               setBadCount={setBadCount}
               certificateModal={certificate}
               setCertificate={setCertificate}

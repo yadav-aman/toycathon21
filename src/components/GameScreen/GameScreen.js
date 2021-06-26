@@ -19,6 +19,8 @@ import RecycleBin from "../../assets/blue-bin.png";
 import BlackBin from "../../assets/grey-bin.png";
 import CompostBin from "../../assets/green-bin.png";
 
+import HandGesture from "./HandTracking";
+
 const GameScreen = (props) => {
   const [currentItem, setCurrentItem] = React.useState(
     items[Math.floor(Math.random() * items.length)]
@@ -27,6 +29,8 @@ const GameScreen = (props) => {
   const [successModal, setSuccessModal] = React.useState(false);
   const [failModal, setFailModal] = React.useState(false);
   const [optionsModal, setOptionsModal] = React.useState(false);
+
+  // HandGesture();
 
   const dropReaction = (currentBin) => {
     setItemVisibility(!itemVisibility);
@@ -148,6 +152,7 @@ const GameScreen = (props) => {
           <img src={CompostBin} alt="Compost Bin" />
         </DropTarget>
       </SC.CompostBinBox>
+      {/* <SC.Video id="debugger-holder"></SC.Video> */}
     </Container>
   );
 };
